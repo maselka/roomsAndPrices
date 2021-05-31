@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Rooms And Prices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Номера и цены</title>
   </head>
   <body>
-    <article>
-      <h1>Номера и цены</h1>
-      <section>
-        <div>
-          <div>
-            <span>Гарантия лучшей цены!</span>
+    <div class="page-background"></div>
+    <article class="page-content">
+      <h1 class="page-title">Номера и цены</h1>
+      <div class="rooms">
+        <section class="rooms_item">
+          <img class="room_photo" src="image/executive-suite.jpg" alt="Представительский люкс">
+          <div class="room_container">
+            <div class="room_description">
+              <h2><a class="room_title" href="#">Представительский люкс</a></h2>
+              <p class="room_text">
+                Эксклюзивный номер с панорамным видом на центр города Москвы
+              </p>
+            </div>
+            <div class="reserve">
+              <p class="reserve_text">
+                Цена за сутки<br>
+                <span class="reserve_text__from"> от</span>
+                <span class="reserve_text__price"> 7 900</span>
+                <span class="reserve_text__rub"> ₽</span>
+              </p>
+              <a class="reserve_btn" href="#">
+                Забронировать
+              </a>
+            </div>
           </div>
-          <a href="#">Представительский люкс</a>
-          <p>
-            Эксклюзивный номер с панорамным видом на центр города Москвы
+          <p class="reserved_text">
+            Номер зарезервирован
+            <br>
+            Перейти к<span class="reserved_text__link"> оплате</span>
           </p>
-        </div>
-        <div>
-          <p>
-            Цена за сутки<span>7 900</span><span>₽</span>
-          </p>
-          <a href="#">
-            <span>Забронировать</span>
-          </a>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <span>Гарантия лучшей цены!</span>
+        </section>
+        <section class="rooms_item">
+          <img class="room_photo" src="image/duplex.jpg" alt="Дуплекс">
+          <div class="room_container">
+            <div class="guarantee-price">
+              <span class="guarantee-price_text">Гарантия лучшей цены!</span>
+              <img class="guarantee-price_icon" src="image/icon-discount.png" alt="">
+            </div>
+            <div class="room_description">
+              <h2><a class="room_title" href="#">Дуплекс</a></h2>
+              <p class="room_text">
+                Просторный двухкомнатный номер с шикарным видом на парк
+              </p>
+            </div>
+            <div class="reserve">
+              <p class="reserve_text">
+                Цена за сутки<br>
+                <span class="reserve_text__from"> от</span>
+                <span class="reserve_text__price"> 5 700</span>
+                <span class="reserve_text__rub"> ₽</span>
+              </p>
+              <a class="reserve_btn" href="#">
+                Забронировать
+              </a>
+            </div>
           </div>
-          <a href="#">Дуплекс</a>
-          <p>
-            Просторный двухкомнатный номер с шикарным видом на парк
+          <p class="reserved_text">
+            Номер зарезервирован
+            <br>
+            Перейти к<span class="reserved_text__link"> оплате</span>
           </p>
-        </div>
-        <div>
-          <p>
-            Цена за сутки<span>5 700</span><span>₽</span>
-          </p>
-          <a href="#">
-            <span>Забронировать</span>
-          </a>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <span>Гарантия лучшей цены!</span>
+        </section>
+        <section class="rooms_item">
+          <img class="room_photo reserved_background" src="image/business-suite.jpg" alt="Бизнес-люкс">
+          <div class="room_container">
+            <div class="room_description">
+              <h2><a class="room_title" href="#">Бизнес-люкс</a></h2>
+              <p class="room_text">
+                Трёхкомнатный номер с панорамным видом на Москва-реку
+              </p>
+            </div>
+            <div class="reserve">
+              <p class="reserve_text">
+                Цена за сутки<br>
+                <span class="reserve_text__from"> от</span>
+                <span class="reserve_text__price"> 4 900</span>
+                <span class="reserve_text__rub"> ₽</span>
+              </p>
+              <a class="reserve_btn" href="#">
+                Забронировать
+              </a>
+            </div>
           </div>
-          <a href="#">Бизнес-люкс</a>
-          <p>
-            Трёхкомнатный номер с панорамным видом на Москва-реку
+          <p class="reserved_text">
+            Номер зарезервирован
+            <br>
+            Перейти к<span class="reserved_text__link"> оплате</span>
           </p>
-        </div>
-        <div>
-          <p>
-            Цена за сутки<span>4 900</span><span>₽</span>
-          </p>
-          <a href="#">
-            <span>Забронировать</span>
-          </a>
-        </div>
-      </section>
+        </section>
+      </div>
     </article>
+    <script src="js/script.js"></script>
   </body>
 </html>
